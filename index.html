@@ -1,33 +1,17 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="style.css" />
-        <script rel="script" type="javascript" src="chess.js"></script>
+        <script rel="script" type="text/javascript" src="board.js"></script>
     </head>
     <body>
 
         <div id="board">
             <div id="row-wrapper">
-                <script>
+                <script type="text/javascript">
 
-                    var darken = false;
+                    createCells();
+                    newGame();
 
-                    for (var row = 0; row < 8; row++) {
-
-                        document.write("<div class=\"row\">");
-
-                        for (var col = 0; col < 8; col++) {
-
-                            if (darken)
-                                document.write("<div class=\"cell dark\"></div>");
-                            else
-                                document.write("<div class=\"cell light\"></div>");
-
-                            darken = !darken;
-                        }
-
-                        darken = !darken;
-                        document.write("</div>");
-                    }
                 </script>
             </div> <!-- row wrapper -->
         </div> <!-- board -->

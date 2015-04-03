@@ -46,6 +46,10 @@ body
 
     height: 80px;
     width: 80px;
+
+    /*background-image: url('assets/pieces/Black-Pawn.png');*/
+    background-position: center;
+    background-size: contain;
 }
 
 .light
@@ -56,4 +60,21 @@ body
 .dark
 {
     background-color: saddlebrown;
+}
+
+.coordinate
+{
+    margin: 0 auto;
+    padding: 0px;
+
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 20pt;
+    font-weight: bolder;
+    opacity: 0.1;
+
+    color: #252525;
 }
