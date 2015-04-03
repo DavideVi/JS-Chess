@@ -6,31 +6,30 @@
     <body>
 
         <div id="board">
+            <div id="row-wrapper">
+                <script>
 
-            <script>
+                    var darken = false;
 
-                var darken = false;
+                    for (var row = 0; row < 8; row++) {
 
-                for (var row = 0; row < 8; row++) {
+                        document.write("<div class=\"row\">");
 
-                    document.write("<div class=\"row\">");
+                        for (var col = 0; col < 8; col++) {
 
-                    for (var col = 0; col < 8; col++) {
+                            if (darken)
+                                document.write("<div class=\"cell dark\"></div>");
+                            else
+                                document.write("<div class=\"cell light\"></div>");
 
-                        if (darken)
-                            document.write("<div class=\"cell dark\"></div>");
-                        else
-                            document.write("<div class=\"cell light\"></div>");
+                            darken = !darken;
+                        }
 
                         darken = !darken;
+                        document.write("</div>");
                     }
-
-                    darken = !darken;
-                    document.write("</div>");
-                }
-            </script>
-
-
+                </script>
+            </div> <!-- row wrapper -->
         </div> <!-- board -->
 
     </body>

@@ -1,23 +1,31 @@
 
 body
 {
-    margin-top: 35px;
-    padding: 0px;
-
     background-color: #fafafa;
 }
 
 #board
 {
-    display: block;
     margin: 0 auto;
     padding: 25px;
 
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+    height: 680px;
     width: 680px;
 
     text-align: center;
 
-    background-color: saddlebrown;
+    background-color: sienna;
+}
+
+#row-wrapper
+{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .row
@@ -38,8 +46,6 @@ body
 
     height: 80px;
     width: 80px;
-
-    border: 1px solid #252525;
 }
 
 .light
@@ -49,5 +55,5 @@ body
 
 .dark
 {
-
+    background-color: saddlebrown;
 }
