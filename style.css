@@ -1,0 +1,53 @@
+
+body
+{
+    margin-top: 35px;
+    padding: 0px;
+
+    background-color: #fafafa;
+}
+
+#board
+{
+    display: block;
+    margin: 0 auto;
+    padding: 25px;
+
+    width: 680px;
+
+    text-align: center;
+
+    background-color: saddlebrown;
+}
+
+.row
+{
+    padding: 0px;
+    margin: 0 auto;
+
+    width: 680px;
+
+    text-align: center;
+}
+
+.cell
+{
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+
+    height: 80px;
+    width: 80px;
+
+    border: 1px solid #252525;
+}
+
+.light
+{
+    background-color: darkorange;
+}
+
+.dark
+{
+
+}

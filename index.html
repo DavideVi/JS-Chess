@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <script rel="script" type="javascript" src="chess.js"></script>
+    </head>
+    <body>
+
+        <div id="board">
+
+            <script>
+
+                var darken = false;
+
+                for (var row = 0; row < 8; row++) {
+
+                    document.write("<div class=\"row\">");
+
+                    for (var col = 0; col < 8; col++) {
+
+                        if (darken)
+                            document.write("<div class=\"cell dark\"></div>");
+                        else
+                            document.write("<div class=\"cell light\"></div>");
+
+                        darken = !darken;
+                    }
+
+                    darken = !darken;
+                    document.write("</div>");
+                }
+            </script>
+
+
+        </div> <!-- board -->
+
+    </body>
+</html>
