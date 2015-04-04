@@ -19,6 +19,8 @@ body
     text-align: center;
 
     background-color: sienna;
+
+    box-shadow: 2px 2px 80px #777;
 }
 
 #row-wrapper
@@ -46,6 +48,7 @@ body
 
     height: 80px;
     width: 80px;
+    box-sizing:border-box;
 
     /*background-image: url('assets/pieces/Black-Pawn.png');*/
     background-position: center;
@@ -54,12 +57,12 @@ body
 
 .light
 {
-    background-color: darkorange;
+    background-color: #FF8C00;
 }
 
 .dark
 {
-    background-color: saddlebrown;
+    background-color: #8B4513;
 }
 
 .coordinate
@@ -67,9 +70,9 @@ body
     margin: 0 auto;
     padding: 0px;
 
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+    /*position: relative;*/
+    /*top: 50%;*/
+    /*transform: translateY(-50%);*/
 
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 20pt;
